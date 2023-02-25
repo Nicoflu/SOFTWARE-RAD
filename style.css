@@ -1,0 +1,66 @@
+:root {
+  --primary-color-hue: 230;
+  --secondary-color-hue: 170;
+  --hero-font-weight: 600;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  background-image: linear-gradient(0deg, hsla(var(--primary-color-hue), 60%, 40%, 1), hsla(var(--secondary-color-hue), 50%, 40%, 1));
+  background-attachment: fixed;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+header {
+  position: relative;
+  background-image: linear-gradient(0deg, hsla(var(--primary-color-hue), 50%, 40%, 0.7), hsla(var(--secondary-color-hue), 60%, 40%, 0.7));
+  padding: clamp(8rem, -4.521739130434783rem + 55.65217391304348vw, 20rem) 5% clamp(2.5rem, -0.23913043478260887rem + 12.173913043478262vw, 6rem) 5%;
+  overflow: hidden;
+  box-shadow: inset 0px -24px 24px -12px hsla(var(--primary-color-hue), 60%, 20%, 0.2);
+}
+header > *:not(img) {
+  max-width: 46rem;
+  margin: 0 auto;
+}
+header h1 {
+  font-size: clamp(2.5rem, 0.04347826086956519rem + 8.695652173913043vw, 4.5rem);
+  font-weight: var(--hero-font-weight);
+  color: #fff;
+  margin-bottom: 0.2em;
+  letter-spacing: var(--hero-letter-spacing);
+}
+header p {
+  font-size: clamp(1.25rem, 1.0543478260869565rem + 0.8695652173913043vw, 1.5rem);
+  color: #fff;
+  line-height: 1.4;
+}
+header img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.page-content {
+  max-width: 46rem;
+  margin: clamp(2rem, 0.4347826086956521rem + 6.956521739130435vw, 4rem) auto;
+  padding: 0 5% 0 5%;
+}
+.page-content p {
+  font-size: clamp(1rem, 0.8043478260869565rem + 0.8695652173913043vw, 1.25rem);
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  opacity: 0.9;
+  filter: blur(0.1px);
+}
+.page-content h3 {
+  font-size: clamp(1.25rem, 0.6630434782608696rem + 2.608695652173913vw, 2rem);
+  font-weight: 600;
+  margin-top: 1.25em;
+  margin-bottom: 0.75em;
+}
